@@ -17,7 +17,7 @@ tasks.create("buildAndCopyExtensions") {
     fun copyShadowJarInDir(src: java.nio.file.Path, dest: java.nio.file.Path, overwrite: Boolean = true) {
         runCatching {
             Files.walk(src).forEach { a ->
-                if (a.fileName.endsWith("-all.jar")) {
+                if (a.fileName.toString().endsWith("-all.jar")) {
                     val b = Paths.get(dest.toString() + a.toString().substring(src.toString().length))
                     if (a != src) {
                         if (overwrite) {
@@ -26,6 +26,7 @@ tasks.create("buildAndCopyExtensions") {
                             Files.copy(a, b)
                         }
                     }
+                    println("Copy from $a to $b")
                 }
             }
         }.onFailure { it.printStackTrace(); println(it.stackTrace) }
