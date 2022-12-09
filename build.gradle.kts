@@ -29,7 +29,7 @@ tasks.create("buildAndCopyExtensions") {
                     println("Copy from $a to $b")
                 }
             }
-        }.onFailure { it.printStackTrace(); println(it.stackTrace) }
+        }.onFailure { it.printStackTrace() }
     }
 
     val extensionProjects = listOf(
