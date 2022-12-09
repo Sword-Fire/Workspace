@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Server [Debug]" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="net.geekmc.turing.TuringServerKt" />
+    <module name="swork-fire-workspace.turing.main" />
+    <option name="PROGRAM_PARAMETERS" value="--debug" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+    <method v="2">
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="buildAndCopyExtensions" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
