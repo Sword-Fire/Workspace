@@ -1,11 +1,11 @@
 [submodule "turing"]
 	path = turing
-	url = https://github.com/Sword-Fire-Sandbox/Turing.git
+	url = https://github.com/Sword-Fire/Turing.git
 
 [submodule "turing-core"]
 	path = turing-core
-	url = https://github.com/Sword-Fire-Sandbox/TuringCore.git
+	url = https://github.com/Sword-Fire/TuringCore.git
 
 [submodule "athena"]
 	path = athena
-	url = https://github.com/Sword-Fire-Sandbox/Athena.git
+	url = https://github.com/Sword-Fire/Athena.git
