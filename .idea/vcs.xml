@@ -8,6 +8,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TuringCore" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/athena" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/turing" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/turing-core" vcs="Git" />
