@@ -44,6 +44,9 @@ allprojects {
     addArtifact("log4j-core", "2.19.0")
     addArtifact("log4j-slf4j-impl", "2.19.0")
     addArtifact("clikt", "3.5.0")
+    addArtifact("flyway-core", "9.10.2")
+    addArtifact("sqlite-jdbc", "3.40.0.0")
+    addArtifact("ktorm-core", "3.5.0")
 
     ext["version.dependencyToVersionMap"] = dependencyToVersionMap
 
