@@ -47,6 +47,7 @@ allprojects {
     addArtifact("flyway-core", "9.10.2")
     addArtifact("sqlite-jdbc", "3.40.0.0")
     addArtifact("ktorm-core", "3.5.0")
+    addArtifact("kodein-di-jvm", "7.17.0")
 
     ext["version.dependencyToVersionMap"] = dependencyToVersionMap
 
