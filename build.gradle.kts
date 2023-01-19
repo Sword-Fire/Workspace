@@ -83,6 +83,8 @@ tasks.create("buildAndCopyExtensions") {
 
     doLast {
         val runDir = project.rootDir.toPath().toAbsolutePath().normalize().resolve("run")
+
+        // 拷贝所有拓展至运行路径。
         val extensionsDir = runDir.resolve("extensions")
         Files.createDirectories(extensionsDir)
         extensionProjects.map {
