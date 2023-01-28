@@ -48,6 +48,7 @@ allprojects {
     addArtifact("sqlite-jdbc", "3.40.0.0")
     addArtifact("ktorm-core", "3.5.0")
     addArtifact("kodein-di-jvm", "7.17.0")
+    addArtifact("reflections", "0.10.2")
 
     ext["version.dependencyToVersionMap"] = dependencyToVersionMap
 
