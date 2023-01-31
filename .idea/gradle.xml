@@ -13,6 +13,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/athena" />
+            <option value="$PROJECT_DIR$/kstom" />
             <option value="$PROJECT_DIR$/turing" />
             <option value="$PROJECT_DIR$/turing-core" />
           </set>

@@ -9,3 +9,7 @@
 [submodule "athena"]
 	path = athena
 	url = https://github.com/Sword-Fire/Athena.git
+
+[submodule "kstom"]
+	path = kstom
+	url = https://github.com/Sword-Fire/KStom.git
