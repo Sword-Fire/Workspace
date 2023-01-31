@@ -15,7 +15,8 @@ group = "net.geekmc"
 
 val subExtensions = listOf(
     "turing-core",
-    "athena"
+    "athena",
+    "kstom",
 )
 
 // 配置所有项目共用的工件版本。
@@ -81,7 +82,9 @@ tasks.create("buildAndCopyExtensions") {
     val extensionProjects = subExtensions.map { childProjects[it]!! }
 
     // 运行前先编译所有拓展。
-    dependsOn(":turing-core:build", ":athena:build")
+    subExtensions.forEach {
+        dependsOn(":$it:build")
+    }
 
     doLast {
         val runDir = project.rootDir.toPath().toAbsolutePath().normalize().resolve("run")
