@@ -14,9 +14,9 @@ repositories {
 group = "net.geekmc"
 
 val subExtensions = listOf(
+    "kstom",
     "turing-core",
     "athena",
-    "kstom",
 )
 
 // 配置所有项目共用的工件版本。
@@ -80,6 +80,8 @@ tasks.create("buildAndCopyExtensions") {
     }
 
     val extensionProjects = subExtensions.map { childProjects[it]!! }
+
+    dependsOn(":turing:classes")
 
     // 运行前先编译所有拓展。
     subExtensions.forEach {
