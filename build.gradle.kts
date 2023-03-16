@@ -86,6 +86,7 @@ tasks.create("buildAndCopyExtensions") {
     // 运行前先编译所有拓展。
     subExtensions.forEach {
         dependsOn(":$it:build")
+        dependsOn(":$it:jar")
     }
 
     doLast {
